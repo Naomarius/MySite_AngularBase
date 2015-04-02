@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="Blog.html">Blog</a>
+          <a class="navbar-brand" href="Forums.html">Forums</a>
+          <a class="navbar-brand" href="Stream.html">Stream</a>
+          <a class="navbar-brand" href="Events.html">Events</a>
+          <!-- <a class="navbar-brand" href="#">Store</a> -->
+          <a class="navbar-brand" href="About.html">About</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="navbar-right" role="form">
+			<a class="navbar-brand" href="LoginRegsiter.html">Sign In</a>
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+	<hr>
+	<div class="container">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		  <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+		  <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+		  <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+		</ol>
+		<div class="carousel-inner">
+		  <div class="item active">
+			<img src="img/AHC770UXWJ7Z1376505580138.jpg" alt="3" width="100%">
+		  </div>
+		  <div class="item">
+			<img src="img/wpid-wp-1405619440824.jpeg" alt="2" width="100%">		
+		  </div>
+		  <div class="item">
+			<img src="img/WoD.jpg" alt="3" width="100%">
+		  </div>
+		  <div class="item">
+			<img src="img/6DIHKAXFU4QK1376700753421.jpg" alt="3" width="100%">
+		  </div>
+		</div>
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		  <span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		  <span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+	</div>
+	
+    <div class="container">
+      <button type="submit" class="btn btn-success" id="blogSubmit">Submit</button>
+      <button type="submit" class="btn btn-success" id="blogCancel">Cancel</button>
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+			<h4>Title</h4>
+			<input type="text" class="form-control">
+			<h4>Content</h4>
+			
+			<ul class="wysihtml5-toolbar">
+			<li class="dropdown"><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-font"></i>&nbsp;<span class="current-font">Normal text</span>&nbsp;<b class="caret"></b></a><ul class="dropdown-menu"><li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="div" href="javascript:;" unselectable="on">Normal text</a></li>
+			<li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" href="javascript:;" unselectable="on">Heading 1</a></li>
+			<li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" href="javascript:;" unselectable="on">Heading 2</a></li></ul></li>
+			<li><div class="btn-group"><a class="btn" data-wysihtml5-command="bold" title="CTRL+B" href="javascript:;" unselectable="on">Bold</a><a class="btn" data-wysihtml5-command="italic" title="CTRL+I" href="javascript:;" unselectable="on">Italic</a><a class="btn" data-wysihtml5-command="underline" title="CTRL+U" href="javascript:;" unselectable="on">Underline</a></div></li>
+			<li><div class="btn-group"><a class="btn" data-wysihtml5-command="insertUnorderedList" title="Unordered List" href="javascript:;" unselectable="on"><i class="icon-list"></i></a><a class="btn" data-wysihtml5-command="insertOrderedList" title="Ordered List" href="javascript:;" unselectable="on"><i class="icon-th-list"></i></a><a class="btn" data-wysihtml5-command="Outdent" title="Outdent" href="javascript:;" unselectable="on"><i class="icon-indent-right"></i></a><a class="btn" data-wysihtml5-command="Indent" title="Indent" href="javascript:;" unselectable="on"><i class="icon-indent-left"></i></a></div></li><li><div class="bootstrap-wysihtml5-insert-link-modal modal hide fade"><div class="modal-header"><a class="close" data-dismiss="modal">×</a><h3>Insert Link</h3></div><div class="modal-body"><input value="http://" class="bootstrap-wysihtml5-insert-link-url input-xlarge"></div><div class="modal-footer"><a href="#" class="btn" data-dismiss="modal">Cancel</a><a href="#" class="btn btn-primary" data-dismiss="modal">Insert link</a></div></div><a class="btn" data-wysihtml5-command="createLink" title="Link" href="javascript:;" unselectable="on"><i class="icon-share"></i></a></li><li><div class="bootstrap-wysihtml5-insert-image-modal modal hide fade"><div class="modal-header"><a class="close" data-dismiss="modal">×</a><h3>Insert Image</h3></div><div class="modal-body"><input value="http://" class="bootstrap-wysihtml5-insert-image-url input-xlarge"></div><div class="modal-footer"><a href="#" class="btn" data-dismiss="modal">Cancel</a><a href="#" class="btn btn-primary" data-dismiss="modal">Insert image</a></div></div><a class="btn" data-wysihtml5-command="insertImage" title="Insert image" href="javascript:;" unselectable="on"><i class="icon-picture"></i></a></li></ul>
+			
+			<div class="raptor">
+				<p>Raptor may be integrated into a site many ways. This article aims to cover the simplest integration possible.</p>
+			</div>
+			
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+			<div class="sidebar-module">
+				<h4>Blogs recent 7</h4>
+				<ol class="list-unstyled">
+				  <li><a href="#">World of Warcraft</a></li>
+				  <li><a href="#">Diablo</a></li>
+				  <li><a href="#">Hearthstone</a></li>
+				  <li><a href="#">Starcraft</a></li>
+				  <li><a href="#">Heroes of the Storm</a></li>
+				  <li><a href="#">Battlefield</a></li>
+				  <li><a href="#">Call of Duty</a></li>
+				  <li><a href="#">Upcoming Games</a></li>
+				</ol>
+			</div>
+        </div><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+	  
+      <hr>
+      <footer>
+        <p>&copy; Jerrad Zonna 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("#blogCancel").click(function(){
+			var url = $("a[href='Blog.html']").attr("href");
+			$(location).attr('href',url);
+		  });
+		});
+	</script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+
+
+
+http://code.tutsplus.com/tutorials/how-to-create-a-phpmysql-powered-forum-from-scratch--net-10188
+
+http://jhollingworth.github.io/bootstrap-wysihtml5/
+
+
+
+Blogs:
+ID
+Owner
+Date
+Content
+Comment_ID
+
+Forums:
+ID
+Date
+Owner
+Content
+Subject
+Comment_ID
+
+Comments:
+ID
+Owner
+Date
+Comment
+
+Events:
+ID
+Owner
+Name
+Date
+Description
+
+Profiles:
+ID
+First Name
+Last Name
+Date of Birth
+Status
+Profile Image
+Flair
+
