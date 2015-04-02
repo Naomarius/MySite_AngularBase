@@ -1,152 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>About</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/responsive-calendar.css" rel="stylesheet" media="screen">
-  </head>
-
-  <body>
-
-	<!-- navbar - START -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Home</a>
-          <a class="navbar-brand" href="Blog.html">Blog</a>
-          <a class="navbar-brand" href="Forums.html">Forums</a>
-          <a class="navbar-brand" href="Stream.html">Stream</a>
-          <a class="navbar-brand" href="#">Events</a>
-          <!-- <a class="navbar-brand" href="#">Store</a> -->
-          <a class="navbar-brand" href="About.html">About</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <div class="navbar-right" role="form">
-			<a class="navbar-brand" href="LoginRegsiter.html">Sign In</a>
-          </div>
-        </div><!--/.navbar-collapse -->
+<div class="row">
+  <div class="col-sm-8 blog-main">
+    <div class="responsive-calendar"><!-- Responsive calendar - START -->
+      <div class="controls">
+    	  <a class="pull-left" data-go="prev">
+    		<div class="btn btn-primary"><i class="icon-chevron-left"></i><<</div>
+    	  </a>
+    	  <h4><span data-head-year></span> <span data-head-month></span></h4>
+    	  <a class="pull-right" data-go="next">
+    		<div class="btn btn-primary"><i class="icon-chevron-right"></i>>></div>
+    	  </a>
       </div>
-    </div>
-	<!-- navbar - End -->
-
-    <hr>
-    <!-- carousel - START -->
-    <div class="container">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-        <img src="img/AHC770UXWJ7Z1376505580138.jpg" alt="3" width="100%">
-        </div>
-        <div class="item">
-        <img src="img/wpid-wp-1405619440824.jpeg" alt="2" width="100%">   
-        </div>
-        <div class="item">
-        <img src="img/WoD.jpg" alt="3" width="100%">
-        </div>
-        <div class="item">
-        <img src="img/6DIHKAXFU4QK1376700753421.jpg" alt="3" width="100%">
-        </div>
+      <div class="day-headers">
+      	<div class="day header">Mon</div>
+      	<div class="day header">Tue</div>
+      	<div class="day header">Wed</div>
+      	<div class="day header">Thu</div>
+      	<div class="day header">Fri</div>
+      	<div class="day header">Sat</div>
+      	<div class="day header">Sun</div>
       </div>
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
+      <div class="days" data-group="days">
+    	<!-- the place where days will be generated -->
+      </div>
+    </div><!-- Responsive calendar - END -->
+  </div><!-- calendar -->
+
+  <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+    <div class="sidebar-module">
+    	<h4>Upcoming Events</h4>
+    	<ol class="list-unstyled">
+    	  <li><a href="#">Battlefield 4 9/4</a></li>
+    	  <li><a href="#">Halo 9/5</a></li>
+    	  <li><a href="#">Naxramas 9/6 </a></li>
+    	  <li><a href="#">Diablo 3 9/10</a></li>
+    	  <li><a href="#">WoW 9/10</a></li>
+    	</ol>
     </div>
-    </div>
-	<!-- carousel - END -->
-
-    <div class="container">
-	  <hr>
-      <div class="row">
-        <div class="col-sm-8 blog-main">
-			<div class="responsive-calendar"><!-- Responsive calendar - START -->
-			  <div class="controls">
-				  <a class="pull-left" data-go="prev">
-					<div class="btn btn-primary"><i class="icon-chevron-left"></i><<</div>
-				  </a>
-				  <h4><span data-head-year></span> <span data-head-month></span></h4>
-				  <a class="pull-right" data-go="next">
-					<div class="btn btn-primary"><i class="icon-chevron-right"></i>>></div>
-				  </a>
-			  </div><hr/>
-			  <div class="day-headers">
-				<div class="day header">Mon</div>
-				<div class="day header">Tue</div>
-				<div class="day header">Wed</div>
-				<div class="day header">Thu</div>
-				<div class="day header">Fri</div>
-				<div class="day header">Sat</div>
-				<div class="day header">Sun</div>
-			  </div>
-			  <div class="days" data-group="days">
-				<!-- the place where days will be generated -->
-			  </div>
-			</div><!-- Responsive calendar - END -->
-		</div><!-- calendar -->
-		
-		<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-			<div class="sidebar-module">
-				<h4>Upcoming Events</h4>
-				<ol class="list-unstyled">
-				  <li><a href="#">Battlefield 4 9/4</a></li>
-				  <li><a href="#">Halo 9/5</a></li>
-				  <li><a href="#">Naxramas 9/6 </a></li>
-				  <li><a href="#">Diablo 3 9/10</a></li>
-				  <li><a href="#">WoW 9/10</a></li>
-				</ol>
-			</div>
-        </div><!-- sidebar end -->
-      </div><!-- row end -->
-
-      <hr>
-
-      <footer>
-        <p>&copy; Jerrad Zonna 2014</p>
-      </footer>
-    </div> <!-- /container -->
+   </div><!-- sidebar end -->
+</div><!-- row end -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.js"></script>
-	<script src="js/responsive-calendar.js"></script>
-	<script>
-		$( document ).ready( function() {
-		  $(".responsive-calendar").responsiveCalendar({
-			  time: '2014-08',
-			  events: {
-				"2014-08-04": {"number": 1},
-				"2014-08-05": {"number": 2}, 
-				"2014-08-06":{"number": 3}, 
-				"2014-08-10": {}}
-		  });
-		});
-	</script>
-  </body>
-</html>
+<script src="js/responsive-calendar.js"></script>
+<script>
+	$( document ).ready( function() {
+	  $(".responsive-calendar").responsiveCalendar({
+		  time: '2014-08',
+		  events: {
+			"2014-08-04": {"number": 1},
+			"2014-08-05": {"number": 2}, 
+			"2014-08-06": {"number": 3}, 
+			"2014-08-10": {}}
+	  });
+	});
+</script>
