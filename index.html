@@ -12,36 +12,11 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
 
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Home</a>
-          <a class="navbar-brand" href="Blog.html">Blog</a>
-          <a class="navbar-brand" href="Forums.html">Forums</a>
-          <a class="navbar-brand" href="Stream.html">Stream</a>
-          <a class="navbar-brand" href="Events.html">Events</a>
-          <a class="navbar-brand" href="About.html">About</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <div class="navbar-right" role="form">
-			       <a class="navbar-brand" href="LoginRegsiter.html">Sign In</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <body ng-app="wootapp">
 
     <hr>
     <div class="container">
@@ -78,42 +53,13 @@
 
     <!-- Page Info -->
     <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Story of the day 28</h2>
-          <p>Recent blog post / story for the day. This includes currently streaming notices, upcoming, blog posts, youtube highlights, charity events, and some news. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <object width="300" height="200" data="http://www.youtube.com/embed/Z9jMSO0CM-Y"></object>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <object width="300" height="200" data="http://www.youtube.com/embed/Z9jMSO0CM-Y"></object>
-        </div>
-        <div class="col-md-8">
-          <h2>Story of the day 28</h2>
-          <p>Recent blog post / story for the day. This includes currently streaming notices, upcoming, blog posts, youtube highlights, charity events, and some news. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+      <div ng-include='"templates/nav.html"'></div>
+      <div ng-view></div>
+      <div ng-include='"templates/footer.html"'></div>
     </div> 
 
-
-
-
-
-    <hr>
-    <footer style="text-align: center">
-      <p>&copy; Jerrad Zonna 2014 The Footer</p>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
