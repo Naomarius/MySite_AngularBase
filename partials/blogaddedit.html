@@ -35,7 +35,13 @@
 <script>
 	$(document).ready(function(){
 	  $('#summernote').summernote();
-
 	  $('.note-editable').attr("style", "height: 300px;");
+
+	  $('.note-editable').click(function(){
+	  	var str = $(this).html();
+	  	if (str == "Enter content here..."){
+	  		$(this).html("");
+	  	}
+	  });
 	});
 </script>
