@@ -21,6 +21,7 @@ $routeProvider
 .when("/stream", {templateUrl: "partials/stream.html", controller: "PageCtrl"})
 .when("/events", {templateUrl: "partials/events.html", controller: "PageCtrl"})
 .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
+.when("/blogaddedit", {templateUrl: "partials/blogaddedit.html", controller: "PageCtrl"})
 
 // else 404
 .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
