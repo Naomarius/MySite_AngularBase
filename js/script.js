@@ -1,9 +1,7 @@
 /**
 * Main AngularJS Web Application
 */
-var app = angular.module('wootapp', [
-'ngRoute'
-]);
+var app = angular.module('wootapp', ['ngRoute']);
 
 /**
 * Configure the Routes
